@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: steelblue;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.5em 2.5em;
+    border-radius: 5px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn {
+    width: 100%;
+    padding: 1em;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    background: lightblue;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 2em;
+}
+
+.form-control{
+    position: relative;
+    margin: 1.5em 0 2.5em;
+    width: 100%;
+}
+
+.form-control input{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid lightblue;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    /* margin-bottom: 5px; */
+}
+
+
+.form-control input:focus , .form-control input:valid{
+    outline: none;
+}
+
+.form-control label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.form-control label span {
+    display: inline-block;
+    min-width: 5px;
+    font-size: 18px;
+    transition: transform 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.form-control input:focus + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+/* cubic-bezier(0.68, -0.55, 0.27, 1.55) */
